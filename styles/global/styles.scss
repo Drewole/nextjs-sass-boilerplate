@@ -76,6 +76,7 @@ a {
 }
 #main-wrapper {
   min-height: 90.75vh;
+  display: flex;
 }
 
 @media (prefers-color-scheme: dark) {
