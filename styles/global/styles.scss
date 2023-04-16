@@ -1,0 +1,87 @@
+//IMPORTANT: Why am I not using scss variables? Because I want to be able to change the theme real time. Scss variables are not dynamic. Css variables are. So we need to use css variables for our theme colors. I figures its just easier to have all of these in one place instead of spread out in multiple places.
+:root {
+  //FONTS
+  //These are automatically being brought in from the _app.tsx file from the nextjs next/google/fonts plugin
+  // --serif-font,
+  // --sanserif-font,
+
+  //Other Variables
+  --container-width: 1200px;
+  --border-radius-sm: 2px;
+  --border-radius: 6px;
+  --border-radius-lg: 12px;
+
+  //NOTE: HSL reads as hsl(hue, saturation, lightness)
+  --red: hsl(355, 78%, 56%); //#e63946
+  --white: hsl(270, 60%, 97%); //#f7f8f6
+  --lightBlue: hsl(182, 43%, 76%); //#a8dadc
+  --medBlue: hsl(203, 39%, 44%); //#457b9d
+  --darkBlue: hsl(215, 50%, 23%); //#1d3557
+
+  /////// THEME COLORS ///////
+  //All theme colors for light mode
+  //Default dark theme colors
+  --main-background: var(--white);
+  --main-foreground: var(--darkBlue);
+  //For the header
+  --header-background: var(--red);
+  --header-foreground: var(--white);
+  //For the footer
+  --footer-background: var(--darkBlue);
+  --footer-foreground: var(--white);
+  //For gradients
+  --main-bkg-start: var(--lightBlue);
+  --main-bkg-end: var(--medBlue);
+
+  //All theme colors for dark mode
+  @media (prefers-color-scheme: dark) {
+    //Default dark theme colors
+    --main-background: var(--darkBlue);
+    --main-foreground: var(--white);
+    //For the header
+    --header-background: var(--red);
+    --header-foreground: var(--white);
+    //For the footer
+    --footer-background: var(--lightBlue);
+    --footer-foreground: var(--darkBlue);
+    //For gradients
+    --main-bkg-start: var(--medBlue);
+    --main-bkg-end: var(--darkBlue);
+  }
+}
+//All theme colors for dark mode
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background: var(--main-background);
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--main-foreground);
+}
+h2 {
+  font-family: var(--serif-font);
+}
+p {
+  font-family: var(--sanserif-font);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#main-wrapper {
+  min-height: 90.75vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  //Dark Theme Style Overrides
+  // //This makes sure the important bits aren't missed https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+  // html {
+  //   color-scheme: dark;
+  // }
+}
