@@ -14,11 +14,12 @@ export default function Home() {
       <main className={styles._}>
         <h1>This is the Homepage Content</h1>
         <p>
-          Some body content (so the title doesn't get lonely). Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Blanditiis suscipit odit iure
-          nihil est eius veniam possimus voluptates dignissimos molestias quasi
-          aut, similique, natus deleniti recusandae aspernatur nobis accusantium
-          quo?
+          Some body <Link href="http://google.com">Google</Link> (so the title
+          doesn't get lonely). Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Blanditiis suscipit odit iure nihil est eius veniam
+          possimus <Link href="http://google.com">Google</Link> dignissimos
+          molestias quasi aut, similique, natus deleniti recusandae aspernatur
+          nobis accusantium quo?
         </p>
         <p>
           <Link href={'/about'}>Heres More About Us</Link>

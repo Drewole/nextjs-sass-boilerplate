@@ -10,13 +10,19 @@
   --border-radius-sm: 2px;
   --border-radius: 6px;
   --border-radius-lg: 12px;
-
+  --default-transition: 0.2s ease-out;
+  /////// COLORS ///////
   //NOTE: HSL reads as hsl(hue, saturation, lightness)
   --red: hsl(355, 78%, 56%); //#e63946
-  --white: hsl(270, 60%, 97%); //#f7f8f6
+  --darkRed: hsl(355, 78%, 30%); //#e63946
+  --white: hsl(60, 12%, 97%); //#f7f8f6
   --lightBlue: hsl(182, 43%, 76%); //#a8dadc
   --medBlue: hsl(203, 39%, 44%); //#457b9d
   --darkBlue: hsl(215, 50%, 23%); //#1d3557
+
+  //Generics
+  --link-color: var(--red);
+  --link-visited: var(--darkRed);
 
   /////// THEME COLORS ///////
   //All theme colors for light mode
@@ -64,16 +70,44 @@ body {
   overflow-x: hidden;
   color: var(--main-foreground);
 }
-h2 {
-  font-family: var(--serif-font);
-}
 p {
   font-family: var(--sanserif-font);
 }
 a {
-  color: inherit;
+  color: var(--link-color);
   text-decoration: none;
+  display: inline-block;
+  transition: color var(--default-transition);
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: width var(--default-transition);
+  }
+
+  &:visited {
+    color: var(--link-visited);
+    &::after {
+      background: var(--link-visited);
+    }
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif-font);
+}
+
 #main-wrapper {
   min-height: 90.75vh;
   display: flex;
