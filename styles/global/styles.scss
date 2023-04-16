@@ -20,6 +20,15 @@
   --medBlue: hsl(203, 39%, 44%); //#457b9d
   --darkBlue: hsl(215, 50%, 23%); //#1d3557
 
+  // BREAKPOINTS
+  --xsmall: 400px;
+  --small: 575px;
+  --mobile: 768px;
+  --tablet: 1000px;
+  --medium: 1200px;
+  --large: 1400px;
+  --xlarge: 1600px;
+
   //Generics
   --main-accent: var(--red);
   --link-color: var(--red);

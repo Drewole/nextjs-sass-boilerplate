@@ -1,1 +1,90 @@
-$yellow: #cdca14;
+/* === BREAKPOINTS ==== */
+@mixin _minWidthXXSmall {
+  @media (min-width: var(--xxsmall)) {
+    @content;
+  }
+}
+
+@mixin _minWidthXSmall {
+  @media (min-width: var(--xsmall)) {
+    @content;
+  }
+}
+
+@mixin _minWidthSmall {
+  @media (min-width: var(--small)) {
+    @content;
+  }
+}
+
+@mixin _minWidthMobile {
+  @media (min-width: var(--mobile)) {
+    @content;
+  }
+}
+
+@mixin _minWidthTablet {
+  @media (min-width: var(--tablet)) {
+    @content;
+  }
+}
+
+@mixin _minWidthMedium {
+  @media (min-width: var(--medium)) {
+    @content;
+  }
+}
+
+@mixin _minWidthLarge {
+  @media (min-width: var(--large)) {
+    @content;
+  }
+}
+
+@mixin _minWidthXLarge {
+  @media (min-width: var(--xlarge)) {
+    @content;
+  }
+}
+
+@mixin _maxWidth($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin _minWidth($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin _maxHeight($max) {
+  @media (max-height: $max) {
+    @content;
+  }
+}
+
+@mixin _minHeight($min) {
+  @media (min-height: $min) {
+    @content;
+  }
+}
+
+@mixin _betweenWidth($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin _widerThan($w) {
+  @media (min-width: #{$w}) {
+    @content;
+  }
+}
+
+@mixin _tallerThan($h) {
+  @media (min-height: #{$h}) {
+    @content;
+  }
+}
