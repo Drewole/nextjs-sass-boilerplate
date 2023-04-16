@@ -1,0 +1,27 @@
+._ {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .credits {
+    font-family: var(--sanserif-font);
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    a {
+      color: var(--softGray);
+      transition: color var(--default-transition);
+      &:after {
+        background: var(--softGray);
+      }
+      &:hover {
+        color: var(--softGray);
+        &:after {
+          background: var(--softGray);
+        }
+      }
+    }
+  }
+}
