@@ -1,0 +1,46 @@
+._ {
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  padding: 2rem 0;
+  a,
+  button,
+  span {
+    display: inline-block !important;
+    background: var(--main-accent);
+    color: var(--white);
+    font-family: var(--sanserif-font);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: background var(--default-transition),
+      color var(--default-transition);
+    &:hover {
+      background: var(--main-accent-hover);
+    }
+  }
+
+  a:after {
+    display: none;
+  }
+  &.alt {
+    a,
+    button,
+    span {
+      display: inline-block !important;
+      background: var(--main-accent);
+      color: var(--white);
+      font-family: var(--sanserif-font);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      padding: 1rem 1.5rem;
+      border-radius: var(--border-radius);
+      transition: background var(--default-transition),
+        color var(--default-transition);
+      &:hover {
+        background: var(--main-accent-alt-hover);
+      }
+    }
+  }
+}
