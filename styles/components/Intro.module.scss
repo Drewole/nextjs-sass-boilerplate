@@ -8,6 +8,31 @@
     margin: 0 auto;
     max-width: 700px;
   }
+  .nav {
+    display: flex;
+    justify-content: center;
+    ul {
+      max-width: 700px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      padding: 1rem 2rem;
+    }
+  }
+  .cards {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4%;
+  }
+  .card {
+    text-align: centers;
+  }
+
   @media (prefers-color-scheme: dark) {
     background-color: var(--medBlue);
     color: var(--white);

@@ -15,15 +15,40 @@ Intro.defaultProps = {
 export default function Intro(props: Props) {
   return (
     <div className={styles._}>
-      <h1>Intro Section</h1>
-      <p>
-        Some body <Link href="http://google.com">content</Link> (so the title
-        doesn't get lonely). Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Blanditiis suscipit odit iure nihil est eius veniam possimus{' '}
-        <Link href="http://google.com">Google</Link> dignissimos molestias quasi
-        aut, similique, natus deleniti recusandae aspernatur nobis accusantium
-        quo?
-      </p>
+      <h2>Purpose</h2>
+      <nav className={styles.nav}>
+        <ul>
+          <li>Mission</li>
+          <li>Vision</li>
+          <li>Goals</li>
+        </ul>
+      </nav>
+
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <h3>Our Mission</h3>
+          <p>
+            To increase access to care for the medically under-served, transform
+            the experience of care and promote health equity through addressing
+            ethnic and racial disparities
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h3>Our Vision</h3>
+          <p>
+            To promote visibility of the increasing diversity within the nursing
+            workforce and grow APRNs that are prepared and invested in caring
+            for the underserved.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h3>Our Goals</h3>
+          <p>
+            Improve community health while mentoring students and providing
+            community service.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
