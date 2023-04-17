@@ -14,7 +14,7 @@
       padding: 2rem;
     }
   }
-  @include _minWidthTablet {
+  @include _minWidthMobile {
     flex-direction: row;
   }
 }
