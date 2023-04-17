@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '@/styles/components/Hero.module.scss';
-import CommunityClinic from '../svg/CommunityClinic';
 import PublicHealth from '../svg/PublicHealth';
 import CreditsWrapper from './CreditsWrapper';
 import Link from 'next/link';
@@ -17,7 +16,7 @@ export default function Hero(props: Props) {
           Intra-professional nurse-led health care model for the underserved.
         </p>
         <div className={styles.buttons}>
-          <Button link={{ href: '/about', text: 'Learn More' }}></Button>
+          <Button link={{ href: '/about', text: 'Our Model' }} />
         </div>
       </div>
       <div className={styles.graphic}>

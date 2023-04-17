@@ -3,7 +3,7 @@ import styles from '@/styles/components/Button.module.scss';
 import Link from 'next/link';
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   onClick?: () => void;
   link?: { href: string; text: string };
@@ -19,6 +19,7 @@ export default function Button({
   tabIndex = 0,
   target = '_self',
 }: Props) {
+  //TODO: This component overall needs some work
   const getDomain = (url: string) =>
     url.replace(/https?:\/\//, '').split('/')[0];
 
