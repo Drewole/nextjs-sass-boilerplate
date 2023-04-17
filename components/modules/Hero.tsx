@@ -12,13 +12,9 @@ export default function Hero(props: Props) {
   return (
     <section className={styles._}>
       <div className={styles.content}>
-        <h1>
-          Community Clinic for Health Equity through Social Justice’s Mission
-        </h1>
+        <h1>Paulson Stanley Community Outreach Teaching Clinic</h1>
         <p>
-          To increase access to care for the medically underserved, transform
-          the experience of care and promote health equity through addressing
-          ethnic and racial disparities.
+          Intra-professional nurse-led health care model for the underserved.
         </p>
         <div className={styles.buttons}>
           <Button link={{ href: '/about', text: 'Learn More' }}>

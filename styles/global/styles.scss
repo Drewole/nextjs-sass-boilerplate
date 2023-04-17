@@ -19,6 +19,7 @@
   --lightBlue: hsl(182, 43%, 76%); //#a8dadc
   --medBlue: hsl(203, 39%, 44%); //#457b9d
   --darkBlue: hsl(215, 50%, 23%); //#1d3557
+  --softGray: hsl(0, 0%, 68%); //#afaf9d
 
   // BREAKPOINTS
   --xsmall: 400px;
@@ -31,6 +32,9 @@
 
   //Generics
   --main-accent: var(--red);
+  --main-accent-hover: var(--darkBlue);
+  --main-accent-alt: var(--main-accent-hover);
+  --main-accent-alt-hover: var(--main-accent);
   --link-color: var(--red);
   --link-visited: var(--darkRed);
 
