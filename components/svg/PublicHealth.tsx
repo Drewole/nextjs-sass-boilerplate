@@ -5,7 +5,7 @@ type Props = {
   color?: string;
 };
 
-export default function CommunityClinic({ className, color }: Props) {
+export default function PublicHealth({ className, color }: Props) {
   return (
     <svg
       className={className}

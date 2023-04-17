@@ -5,4 +5,27 @@
   padding: 20px;
   background-color: var(--footer-background);
   color: var(--footer-foreground);
+  a {
+    color: var(--footer-foreground);
+    text-decoration: none;
+    display: inline-block;
+    transition: color var(--default-transition);
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: var(--white);
+      transition: width var(--default-transition);
+    }
+    &:visited {
+      color: var(--darkBlue);
+      &::after {
+        background: var(--white);
+      }
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }

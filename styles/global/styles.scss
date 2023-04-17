@@ -44,11 +44,11 @@
   --main-background: var(--white);
   --main-foreground: var(--darkBlue);
   //For the header
-  --header-background: var(--red);
+  --header-background: var(--darkBlue);
   --header-foreground: var(--white);
   //For the footer
-  --footer-background: var(--darkBlue);
-  --footer-foreground: var(--white);
+  --footer-background: var(--red);
+  --footer-foreground: var(--darkBlue);
   //For gradients
   --main-bkg-start: var(--lightBlue);
   --main-bkg-end: var(--medBlue);
@@ -59,10 +59,10 @@
     --main-background: var(--darkBlue);
     --main-foreground: var(--white);
     //For the header
-    --header-background: var(--red);
+    --header-background: var(--medBlue);
     --header-foreground: var(--white);
     //For the footer
-    --footer-background: var(--lightBlue);
+    --footer-background: var(--red);
     --footer-foreground: var(--darkBlue);
     //For gradients
     --main-bkg-start: var(--medBlue);
@@ -108,7 +108,9 @@ a {
       background: var(--link-visited);
     }
   }
-
+  &:hover {
+    cursor: pointer;
+  }
   &:hover::after {
     width: 100%;
   }

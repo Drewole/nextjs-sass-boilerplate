@@ -9,13 +9,11 @@ export default function CommunityClinic({ className, color }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="709"
-      height="425"
       fill="none"
       viewBox="0 0 709 425"
       className={className}
     >
-      <g clip-path="url(#clip0_1_3)">
+      <g clipPath="url(#clip0_1_3)">
         <path
           fill="#EBEBEB"
           d="M13 200.26c1.8.5 3.3 1.8 4.2 3.5.8 1.7 1.3 3.5 1.3 5.4.1 3.6-1.3 7.6-3.1 10.7-3.4-2.2-4.8-6.6-5.4-8.9-.8-3.5-.2-10.7 3-10.7ZM19.9 225.36c-.7-2-.3-4.3 1-5.9 1.4-1.6 3.4-2.6 5.5-2.7 1-.2 2 .1 2.7.8.6.7.8 1.7.4 2.6-.3.8-.9 1.6-1.6 2.2-2.3 1.8-5 3.4-8 3Z"

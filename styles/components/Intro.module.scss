@@ -4,33 +4,35 @@
   color: var(--darkBlue);
   padding: 8%;
   text-align: center;
+  h2 {
+    margin-bottom: 2rem;
+    @include _minWidthTablet {
+      margin-bottom: 4rem;
+    }
+  }
+  h3 {
+    color: var(--accent-color);
+  }
   p {
     margin: 0 auto;
     max-width: 700px;
-  }
-  .nav {
-    display: flex;
-    justify-content: center;
-    ul {
-      max-width: 700px;
-      margin: 0 auto;
-      list-style: none;
-    }
-    li {
-      display: inline-block;
-      padding: 1rem 2rem;
-    }
   }
   .cards {
     text-align: center;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 4%;
+    @include _minWidthMobile {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
   .card {
-    text-align: centers;
+    text-align: center;
+    width: 45%;
+
+    @include _minWidthMobile {
+      width: 30%;
+    }
   }
 
   @media (prefers-color-scheme: dark) {
