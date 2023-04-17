@@ -13,19 +13,29 @@
   --default-transition: 0.2s ease-out;
   /////// COLORS ///////
   //NOTE: HSL reads as hsl(hue, saturation, lightness)
-  --red: hsl(355, 78%, 56%); //#e63946
-  --darkRed: hsl(355, 78%, 30%); //#e63946
+  --red: hsl(7, 99%, 65%); //#ff725e
+  --darkRed: hsl(7, 65%, 56%); //#ff725e
   --white: hsl(60, 12%, 97%); //#f7f8f6
   --lightBlue: hsl(182, 43%, 76%); //#a8dadc
   --medBlue: hsl(203, 39%, 44%); //#457b9d
   --darkBlue: hsl(215, 50%, 23%); //#1d3557
 
+  // BREAKPOINTS
+  --xsmall: 400px;
+  --small: 575px;
+  --mobile: 768px;
+  --tablet: 1000px;
+  --medium: 1200px;
+  --large: 1400px;
+  --xlarge: 1600px;
+
   //Generics
+  --main-accent: var(--red);
   --link-color: var(--red);
   --link-visited: var(--darkRed);
 
   /////// THEME COLORS ///////
-  //All theme colors for light mode
+  //All theme color variables for light mode
   //Default dark theme colors
   --main-background: var(--white);
   --main-foreground: var(--darkBlue);
@@ -41,7 +51,7 @@
 
   //All theme colors for dark mode
   @media (prefers-color-scheme: dark) {
-    //Default dark theme colors
+    //Overriding s the default light theme colors with dark theme colors
     --main-background: var(--darkBlue);
     --main-foreground: var(--white);
     //For the header
@@ -55,7 +65,6 @@
     --main-bkg-end: var(--darkBlue);
   }
 }
-//All theme colors for dark mode
 
 * {
   box-sizing: border-box;
@@ -65,6 +74,7 @@
 
 html,
 body {
+  font-size: 16px;
   background: var(--main-background);
   max-width: 100vw;
   overflow-x: hidden;
@@ -107,10 +117,33 @@ h5,
 h6 {
   font-family: var(--serif-font);
 }
+//Based off this typescale https://type-scale.spencermortensen.com/6/3.25/0/16px
+h1 {
+  font-size: 3.25rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1.22rem;
+}
+small {
+  font-size: 0.8125rem;
+}
 
 #main-wrapper {
   min-height: 90.75vh;
   display: flex;
+  flex-direction: column;
 }
 
 @media (prefers-color-scheme: dark) {
