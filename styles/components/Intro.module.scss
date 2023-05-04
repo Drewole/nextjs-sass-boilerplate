@@ -34,9 +34,8 @@
       width: 30%;
     }
   }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--medBlue);
+  @include _prefersDark {
+    background-color: darken($darkBlue, 4%);
     color: var(--white);
   }
 }

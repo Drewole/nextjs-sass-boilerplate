@@ -4,6 +4,7 @@ import styles from '@/styles/components/Intro.module.scss';
 import CommunityClinic from '../svg/CommunityClinic';
 import NursingDiversity from '../svg/NursingDiversity';
 import CommunityHealth from '../svg/CommunityHealth';
+import CreditsWrapper from './CreditsWrapper';
 
 type Props = {
   title?: string;
@@ -30,7 +31,9 @@ export default function Intro(props: Props) {
             for the underserved.
           </p>
           <div className={styles.graphic}>
-            <NursingDiversity />
+            <CreditsWrapper>
+              <NursingDiversity />
+            </CreditsWrapper>
           </div>
         </div>
         <div className={styles.card}>
@@ -41,7 +44,9 @@ export default function Intro(props: Props) {
             ethnic and racial disparities
           </p>
           <div className={styles.graphic}>
-            <CommunityClinic />
+            <CreditsWrapper>
+              <CommunityClinic />
+            </CreditsWrapper>
           </div>
         </div>
         <div className={styles.card}>
@@ -51,7 +56,9 @@ export default function Intro(props: Props) {
             community service.
           </p>
           <div className={styles.graphic}>
-            <CommunityHealth />
+            <CreditsWrapper>
+              <CommunityHealth />
+            </CreditsWrapper>
           </div>
         </div>
       </div>
