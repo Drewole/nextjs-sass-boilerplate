@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '@/styles/components/Hero.module.scss';
 import PublicHealth from '../svg/PublicHealth';
 import CreditsWrapper from './CreditsWrapper';
-import Link from 'next/link';
 import Button from '../partials/Button';
 
 type Props = {};
@@ -20,13 +19,7 @@ export default function Hero(props: Props) {
         </div>
       </div>
       <div className={styles.graphic}>
-        <CreditsWrapper
-          credits={
-            <Link target="_blank" href="https://storyset.com/education">
-              Education illustrations by Storyset
-            </Link>
-          }
-        >
+        <CreditsWrapper>
           <PublicHealth />
         </CreditsWrapper>
       </div>
