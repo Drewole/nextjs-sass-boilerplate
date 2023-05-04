@@ -1,5 +1,9 @@
 ._ {
-  @include _basePadding;
+  padding: 2rem 0;
+  background: $linearGradient;
+  @include _minWidthTablet {
+    padding: 6rem 4%;
+  }
 
   h2 {
     color: var(--red);

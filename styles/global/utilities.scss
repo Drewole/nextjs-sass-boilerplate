@@ -20,6 +20,11 @@ $xlarge: 1600px;
 $container: 1400px;
 $baseVerticalPadding: 2rem;
 $baseHorizontalPadding: 6%;
+$linearGradient: linear-gradient(
+  329deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(197, 220, 221, 0.30438112745098034) 100%
+);
 
 @mixin containMe($width: $container) {
   max-width: $width;

@@ -87,6 +87,7 @@ body {
 }
 p {
   font-family: var(--sanserif-font);
+  line-height: calc(1.5 * 1rem);
 }
 a {
   color: var(--link-color);

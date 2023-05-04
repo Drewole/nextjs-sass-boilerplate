@@ -18,7 +18,7 @@ Intro.defaultProps = {
 
 export default function Intro(props: Props) {
   return (
-    <div className={styles._}>
+    <div id={'purpose'} className={styles._}>
       <p className={styles.preTitle}>Our</p>
       <h2>Purpose</h2>
 
