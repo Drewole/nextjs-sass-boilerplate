@@ -5,7 +5,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles/global')],
     includePaths: [path.join(__dirname, 'styles/components')],
-    prependData: `@import "@styles/global/mixins.scss";`,
+    prependData: `@import "@styles/global/utilities.scss";`,
   },
   webpack(config) {
     config.resolve.alias = {
