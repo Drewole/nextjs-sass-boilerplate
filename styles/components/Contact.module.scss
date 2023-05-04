@@ -10,7 +10,11 @@
     font-size: 1.8rem;
     letter-spacing: 0.09rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+  }
+  .description {
+    @include textMaxWidth;
+    @include _basePadding;
+    text-align: center;
   }
 
   form {

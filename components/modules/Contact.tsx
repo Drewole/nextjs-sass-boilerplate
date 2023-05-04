@@ -28,6 +28,10 @@ export default function Contact({}: Props) {
     <div id={'contact'} className={styles._}>
       <div className={styles.wrapper}>
         <h2>Contact Us</h2>
+        <p className={styles.description}>
+          Have questions about our programs or want to get involved? Send us a
+          message!
+        </p>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.row}>
