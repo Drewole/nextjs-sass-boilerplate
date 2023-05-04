@@ -14,11 +14,12 @@ export default function About() {
       <main className={styles._}>
         <h1>This is the Aboutpage Content</h1>
         <p>
-          Some body content (so the title doesn't get lonely). Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Blanditiis suscipit odit iure
-          nihil est eius veniam possimus voluptates dignissimos molestias quasi
-          aut, similique, natus deleniti recusandae aspernatur nobis accusantium
-          quo?
+          {/* // eslint-disable-next-line react/no-unescaped-entities */}
+          Some body content (so the title doesn&apos;t get lonely). Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit odit
+          iure nihil est eius veniam possimus voluptates dignissimos molestias
+          quasi, similique, natus deleniti recusandae aspernatur nobis
+          accusantium quo?
         </p>
         <p>
           <Link href={'/'}>Back to Home</Link>
