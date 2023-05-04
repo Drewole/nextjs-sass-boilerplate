@@ -26,6 +26,15 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
+  [class*='photo-credit'] {
+    color: darken($lightBlue, 40%);
+    &:visited {
+      color: darken($lightBlue, 40%);
+    }
+    &:after {
+      background: darken($lightBlue, 40%) !important;
+    }
+  }
   .card {
     text-align: center;
     width: 45%;

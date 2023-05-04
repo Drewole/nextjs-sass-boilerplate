@@ -10,7 +10,7 @@ export default function Hero(props: Props) {
   return (
     <section className={styles._}>
       <div className={styles.content}>
-        <h1>Paulson Stanley Community Outreach Teaching Clinic</h1>
+        <h1>Paulson-Stanley Community Outreach Teaching Clinic</h1>
         <p>
           Intra-professional nurse-led health care model for the underserved.
         </p>

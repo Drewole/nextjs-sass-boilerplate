@@ -3,9 +3,13 @@
 
   h2 {
     color: var(--red);
-    @include _prefersDark {
-      color: var(--white);
-    }
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    @include textMaxWidth;
   }
   .children {
     padding-top: $baseVerticalPadding;

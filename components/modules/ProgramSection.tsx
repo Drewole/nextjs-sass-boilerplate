@@ -17,7 +17,7 @@ export function ProgramSection({
   return (
     <div className={`${styles._} ${className}`}>
       <h2>{mainTitle}</h2>
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
       {children && <div className={styles.children}>{children}</div>}
     </div>
   );

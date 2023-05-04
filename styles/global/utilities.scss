@@ -26,6 +26,11 @@ $baseHorizontalPadding: 6%;
   margin-left: auto;
   margin-right: auto;
 }
+@mixin textMaxWidth {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @mixin _basePadding {
   padding: $baseVerticalPadding $baseHorizontalPadding;
 }

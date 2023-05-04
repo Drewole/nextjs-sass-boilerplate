@@ -1,3 +1,23 @@
 ._ {
   width: 100%;
+  position: relative;
+  .wrapper {
+    display: flex;
+  }
+  .images {
+    width: 50%;
+  }
+  .text {
+    width: 50%;
+  }
+
+  .slide {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

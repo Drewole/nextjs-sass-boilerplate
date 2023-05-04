@@ -12,7 +12,7 @@ export default function CreditsWrapper({ children, className }: Props) {
     <div className={`${styles._} ${className}`}>
       {children}
       <Link
-        className={styles.credits}
+        className={`${styles.credits} photo-credit`}
         target="_blank"
         href="https://storyset.com/education"
       >
