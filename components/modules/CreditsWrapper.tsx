@@ -1,21 +1,23 @@
 import React from 'react';
 import styles from '@/styles/components/CreditsWrapper.module.scss';
+import Link from 'next/link';
 
 type Props = {
   children: React.ReactNode;
   className?: string;
-  credits?: React.ReactNode;
 };
 
-export default function CreditsWrapper({
-  children,
-  className,
-  credits,
-}: Props) {
+export default function CreditsWrapper({ children, className }: Props) {
   return (
     <div className={`${styles._} ${className}`}>
       {children}
-      {credits && <div className={styles.credits}>{credits}</div>}
+      <Link
+        className={styles.credits}
+        target="_blank"
+        href="https://storyset.com/education"
+      >
+        Education illustrations by Storyset
+      </Link>
     </div>
   );
 }
