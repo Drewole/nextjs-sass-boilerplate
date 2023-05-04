@@ -55,20 +55,20 @@
   --main-bkg-end: var(--medBlue);
 
   //All theme colors for dark mode
-  @media (prefers-color-scheme: dark) {
-    //Overriding s the default light theme colors with dark theme colors
-    --main-background: var(--darkBlue);
-    --main-foreground: var(--white);
-    //For the header
-    --header-background: var(--medBlue);
-    --header-foreground: var(--white);
-    //For the footer
-    --footer-background: var(--red);
-    --footer-foreground: var(--darkBlue);
-    //For gradients
-    --main-bkg-start: var(--medBlue);
-    --main-bkg-end: var(--darkBlue);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   //Overriding s the default light theme colors with dark theme colors
+  //   --main-background: var(--darkBlue);
+  //   --main-foreground: var(--white);
+  //   //For the header
+  //   --header-background: var(--medBlue);
+  //   --header-foreground: var(--white);
+  //   //For the footer
+  //   --footer-background: var(--red);
+  //   --footer-foreground: var(--darkBlue);
+  //   //For gradients
+  //   --main-bkg-start: var(--medBlue);
+  //   --main-bkg-end: var(--darkBlue);
+  // }
 }
 
 * {

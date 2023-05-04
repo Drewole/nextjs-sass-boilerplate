@@ -1,0 +1,62 @@
+._ {
+  width: 100%;
+  @include _basePadding;
+  background: var(--darkBlue);
+  color: var(--white);
+
+  h2 {
+    text-align: center;
+    font-family: var(--sanserif-font);
+    font-size: 1.8rem;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    @include containMe(768px);
+    margin: 0 auto;
+  }
+  label {
+    width: 50%;
+
+    span {
+      font-size: 0.8rem;
+      color: var(--lightBlue);
+      text-transform: uppercase;
+      font-family: var(--sanserif-font);
+      letter-spacing: 0.09rem;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background: lighten($darkBlue, 8%);
+    color: lighten($lightBlue, 8%);
+    font-family: var(--sanserif-font);
+    font-size: 1rem;
+    transition: outline var(--default-transition);
+    &:focus {
+      outline: 2px solid lighten($darkBlue, 20%);
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .message {
+    textarea {
+      height: 200px;
+    }
+  }
+  .submit {
+    border: none;
+  }
+}

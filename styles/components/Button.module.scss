@@ -13,11 +13,17 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
+    border: none;
     border-radius: var(--border-radius);
     transition: background var(--default-transition),
       color var(--default-transition);
     &:hover {
+      color: var(--white);
       background: var(--main-accent-hover);
+      cursor: pointer;
+      // @include _prefersDark {
+      //   background: var(--lightBlue);
+      // }
     }
   }
 
@@ -39,7 +45,8 @@
       transition: background var(--default-transition),
         color var(--default-transition);
       &:hover {
-        background: var(--main-accent-alt-hover);
+        color: var(--darkBlue);
+        background: var(--lightBlue);
       }
     }
   }

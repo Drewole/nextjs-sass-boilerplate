@@ -6,7 +6,7 @@
   background-color: var(--footer-background);
   color: var(--footer-foreground);
   a {
-    color: var(--footer-foreground);
+    color: darken($red, 15%);
     text-decoration: none;
     display: inline-block;
     transition: color var(--default-transition);
@@ -19,7 +19,7 @@
       transition: width var(--default-transition);
     }
     &:visited {
-      color: var(--darkBlue);
+      color: darken($darkRed, 20%);
       &::after {
         background: var(--white);
       }

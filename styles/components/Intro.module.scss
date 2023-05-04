@@ -34,8 +34,8 @@
       width: 30%;
     }
   }
-  @include _prefersDark {
-    background-color: darken($darkBlue, 4%);
-    color: var(--white);
-  }
+  // @include _prefersDark {
+  //   background-color: darken($darkBlue, 4%);
+  //   color: var(--white);
+  // }
 }

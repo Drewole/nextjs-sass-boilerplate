@@ -7,8 +7,10 @@ type Props = {
   className?: string;
   onClick?: () => void;
   link?: { href: string; text: string };
+  type?: 'button' | 'submit' | 'reset';
   tabIndex?: number;
   target?: string;
+  alt?: boolean;
 };
 
 export default function Button({
@@ -16,8 +18,10 @@ export default function Button({
   className,
   onClick,
   link,
+  type = 'button',
   tabIndex = 0,
   target = '_self',
+  alt,
 }: Props) {
   //TODO: This component overall needs some work
   const getDomain = (url: string) =>
@@ -39,13 +43,15 @@ export default function Button({
   // should we even return anything here?
   if (!link?.href || (!link?.text && !onClick)) {
     return (
-      <div className={`${styles._} ${className}`}>
-        <span tabIndex={tabIndex}>{link?.text || children}</span>
+      <div className={`${styles._} ${className} ${alt && styles.alt}`}>
+        <button type={type} tabIndex={tabIndex}>
+          {link?.text || children}
+        </button>
       </div>
     );
   }
   return (
-    <div className={`${styles._} ${className}`}>
+    <div className={`${styles._} ${className} ${alt && styles.alt}`}>
       <Link target={target} href={link?.href}>
         {link?.text || children}
       </Link>

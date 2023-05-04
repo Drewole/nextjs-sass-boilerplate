@@ -15,7 +15,7 @@ export default function Hero(props: Props) {
           Intra-professional nurse-led health care model for the underserved.
         </p>
         <div className={styles.buttons}>
-          <Button link={{ href: '/about', text: 'Our Model' }} />
+          <Button link={{ href: '#programs', text: 'Our Models' }} />
         </div>
       </div>
       <div className={styles.graphic}>
