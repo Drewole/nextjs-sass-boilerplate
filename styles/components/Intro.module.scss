@@ -20,10 +20,12 @@
   .cards {
     text-align: center;
     width: 100%;
-    display: flex;
+    display: grid;
     grid-gap: 4%;
+    padding-bottom: 100px;
     @include _minWidthMobile {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding-bottom: 0;
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     }
   }
   [class*='photo-credit'] {
@@ -37,11 +39,7 @@
   }
   .card {
     text-align: center;
-    width: 45%;
-
-    @include _minWidthMobile {
-      width: 30%;
-    }
+    width: 100%;
   }
   // @include _prefersDark {
   //   background-color: darken($darkBlue, 4%);

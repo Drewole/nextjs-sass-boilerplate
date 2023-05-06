@@ -60,7 +60,17 @@
       height: 200px;
     }
   }
+  .programs {
+    textarea {
+      height: 100px;
+    }
+  }
   .submit {
     border: none;
+  }
+  .success {
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
   }
 }
