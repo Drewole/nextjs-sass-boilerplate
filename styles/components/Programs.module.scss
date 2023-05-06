@@ -28,4 +28,10 @@
       object-fit: cover;
     }
   }
+  [class*='swiper-button-next'],
+  [class*='swiper-button-prev'] {
+    color: var(--darkBlue);
+    padding: 60px 0;
+    transform: translateY(-50px);
+  }
 }

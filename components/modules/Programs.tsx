@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from '@/styles/components/Programs.module.scss';
 import { ProgramSection } from './ProgramSection';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 import Image from 'next/image';
 
@@ -10,9 +12,9 @@ type Props = {};
 
 export default function Programs({}: Props) {
   const settings = {
-    navigation: false,
+    modules: [Navigation],
+    navigation: true,
     infinite: true,
-    arrows: false,
     speed: 500,
     slidesPerView: 1,
     slidesToScroll: 1,
