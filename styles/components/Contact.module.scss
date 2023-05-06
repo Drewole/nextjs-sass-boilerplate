@@ -22,8 +22,10 @@
     margin: 0 auto;
   }
   label {
-    width: 50%;
-
+    width: 100%;
+    @include _minWidthSmall {
+      width: 50%;
+    }
     span {
       font-size: 0.8rem;
       color: var(--lightBlue);
@@ -51,9 +53,12 @@
   }
   .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    @include _minWidthSmall {
+      gap: 2rem;
+      flex-direction: row;
+    }
   }
   .message {
     textarea {
