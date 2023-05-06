@@ -30,15 +30,15 @@ export default function Programs({}: Props) {
               <SwiperSlide>
                 <Image
                   src="/images/world.jpg"
-                  alt="temp image"
+                  alt="world image"
                   width={500}
                   height={500}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/images/determined.jpg"
-                  alt="temp image"
+                  src="/images/cottonbro.jpg"
+                  alt="cottonbro image"
                   width={500}
                   height={500}
                 />
@@ -81,15 +81,15 @@ export default function Programs({}: Props) {
             <Swiper {...settings}>
               <SwiperSlide>
                 <Image
-                  src="/images/closeUpNurse.jpg"
-                  alt="temp image"
+                  src="/images/closeupNurse.jpg"
+                  alt="closeupnurse image"
                   width={500}
                   height={500}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/images/cottonbro.jpg"
+                  src="/images/determined.jpg"
                   alt="temp image"
                   width={500}
                   height={500}
@@ -109,16 +109,16 @@ export default function Programs({}: Props) {
             <Swiper {...settings}>
               <SwiperSlide>
                 <Image
-                  src="/images/closeUpNurse.jpg"
-                  alt="temp image"
+                  src="/images/smile.jpg"
+                  alt="smile image"
                   width={500}
                   height={500}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/images/cottonbro.jpg"
-                  alt="temp image"
+                  src="/images/heart.jpg"
+                  alt="heart image"
                   width={500}
                   height={500}
                 />
